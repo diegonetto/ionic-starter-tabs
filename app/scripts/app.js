@@ -1,3 +1,4 @@
+'use strict'
 // Ionic Starter App, v0.9.20
 
 // angular.module is a global place for creating, registering and retrieving Angular modules
@@ -23,9 +24,9 @@ angular.module('<%= appName %>', ['ionic', '<%= appName %>.controllers', '<%= ap
 
     // setup an abstract state for the tabs directive
     .state('tab', {
-      url: "/tab",
+      url: '/tab',
       abstract: true,
-      templateUrl: "templates/tabs.html"
+      templateUrl: 'templates/tabs.html'
     })
 
     // Each tab has its own nav history stack:
@@ -67,7 +68,7 @@ angular.module('<%= appName %>', ['ionic', '<%= appName %>.controllers', '<%= ap
           controller: 'AccountCtrl'
         }
       }
-    })
+    });
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/dash');
